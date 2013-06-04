@@ -2,25 +2,25 @@
     "name": "phraseanet/silex-sdk-provider",
     "description": "Phraseanet SDK Silex Provider",
     "license": "MIT",
-    "authors": [
-    {
-        "name": "Romain Neutron",
-        "email": "imprec@gmail.com"
+    "config": {
+        "bin-dir" : "bin/"
     },
-    {
-        "name": "Phraseanet Team",
-        "email": "info@alchemy.fr",
-        "homepage": "http://www.phraseanet.com/"
-    }
+    "authors": [
+        {
+            "name": "Phraseanet Team",
+            "email": "info@alchemy.fr",
+            "homepage": "http://www.phraseanet.com/"
+        }
     ],
     "require": {
-        "guzzle/silex-provider": "dev-master"
+        "guzzle/guzzle"         : "~3.3",
+        "doctrine/cache"        : "~1.0"
     },
     "require-dev" : {
-        "phraseanet/php-sdk": "dev-master",
-        "silex/silex":"dev-master"
+        "phraseanet/php-sdk"    : "~0.2",
+        "silex/silex"           : "~1.0",
+        "phpunit/phpunit"       : "~3.0"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "Alchemy": "src"
